@@ -54,7 +54,7 @@ void insert_choice(int choice) {
 
 void get_user_choice() {
     size_t choice;
-    vector<int>::iterator iter;
+    std::vector<int>::iterator iter;
     do {
         cout << "Enter your choice: ";
         cin >> ws >> choice;
@@ -78,7 +78,7 @@ void get_user_choice() {
 }
 
 void get_robot_choice() {
-	uniform_int_distribution<int> dist(0, Free_Space.size());
+	uniform_int_distribution<int> dist(0, Free_Space.size() - 1);
 	int choice = dist(rand_engine);
 	std::cout << "Robot choice: " << Free_Space[choice] << endl;
 	insert_choice(Free_Space[choice]);
