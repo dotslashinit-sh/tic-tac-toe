@@ -2,7 +2,6 @@
 #include <vector>
 #include <random>
 #include <algorithm>
-
 using namespace std;
 
 constexpr int BOARD_SIZE = 9;
