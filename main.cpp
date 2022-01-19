@@ -2,7 +2,7 @@
 #include <vector>
 #include <random>
 #include <algorithm>
-
+#include <ctime>
 using namespace std;
 
 constexpr int BOARD_SIZE = 9;
